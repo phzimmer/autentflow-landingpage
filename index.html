@@ -218,6 +218,84 @@ footer{background:var(--navy);padding:40px max(5%,calc((100% - 1120px)/2));displ
 .flogo{font-family:var(--gs);font-weight:800;font-size:16px;color:#fff;letter-spacing:-.02em}
 .flogo span{color:var(--blue)}
 .fmeta{font-size:12px;color:rgba(255,255,255,0.25)}
+
+/* ===== MOBILE ===== */
+html, body { overflow-x: hidden; }
+
+@media (max-width: 768px) {
+  /* Cursor oculto em touch */
+  .cdot, .cring { display: none; }
+  body { cursor: auto; }
+
+  /* Nav */
+  nav { padding: 0 20px; }
+  .nav-logo { font-size: 15px; }
+  .nav-cta { padding: 7px 14px; font-size: 12px; }
+
+  /* Hero */
+  .hero { padding: 90px 20px 60px; }
+  .hero-sub { font-size: 15px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+  .stn { font-size: 26px; }
+  .stl { font-size: 10px; }
+
+  /* Sections */
+  .sec { padding: 64px 20px; }
+  .vis-sec, .how-sec, .cta-sec { padding: 64px 20px; }
+  .dfy { padding: 48px 20px; }
+  footer { padding: 32px 20px; }
+  h2 { font-size: clamp(28px,8vw,40px); }
+  h2 .ac { font-size: clamp(30px,8.5vw,42px); }
+
+  /* Calculadora — stack vertical */
+  .calc-grid { grid-template-columns: 1fr; }
+  .cblk:first-child { border-radius: 12px 12px 0 0; }
+  .cblk:last-child  { border-radius: 0 0 12px 12px; }
+
+  /* Pilares visibilidade — stack */
+  .vis-pillars { grid-template-columns: 1fr; }
+  .vis-q { flex-direction: column; gap: 1rem; }
+  .vis-h { font-size: clamp(30px,8vw,48px); }
+  .vis-h .ac { font-size: clamp(32px,8.5vw,50px); }
+
+  /* Entregáveis — 1 coluna */
+  .del-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .dc:nth-child(1) { border-radius: 12px 12px 0 0; }
+  .dc:nth-child(2), .dc:nth-child(3),
+  .dc:nth-child(4), .dc:nth-child(5) { border-radius: 0; }
+  .dc:nth-child(6) { border-radius: 0 0 12px 12px; }
+
+  /* KB — tabela responsiva */
+  .kb-wrap { max-width: 100%; }
+  .kb-table { font-size: 11px; }
+  .kb-table th, .kb-table td { padding: 8px 10px; }
+
+  /* n8n diagrama — scroll horizontal */
+  .nb { overflow-x: auto; padding: 36px 16px 20px; }
+  .nb-grid { min-width: 560px; }
+
+  /* Pricing — stack */
+  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
+  .anote { max-width: 100%; }
+
+  /* Para quem é — 1 coluna */
+  .who-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .wcard:nth-child(1) { border-radius: 12px 12px 0 0; }
+  .wcard:nth-child(2), .wcard:nth-child(3),
+  .wcard:nth-child(4), .wcard:nth-child(5) { border-radius: 0; }
+  .wcard:nth-child(6) { border-radius: 0 0 12px 12px; }
+
+  /* FAQ */
+  .faq-list { max-width: 100%; }
+  .faq-q { font-size: 13px; }
+
+  /* CTA */
+  .cta-acts { flex-direction: column; align-items: center; }
+
+  /* Footer */
+  footer { flex-direction: column; text-align: center; gap: 8px; }
+}
 </style>
 </head>
 <body>
